@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con Alma para poder reservar un turno de tatuaje conmigo.">
+    <meta name="keywords" content="tattoo, tattoos, tattoo artist, artista independiente, contacto, mail, redes sociales, formulario">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/4648145f9d.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo&family=Bebas+Neue&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="fondoNegro">
+        <!--menu-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark encabezado">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  <img src="img/logo1.png" alt="Alma Tattoo" class="encabezado__logo">
+                </a>
+                <button class="navbar-toggler" 
+                type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="encabezado__menu"><a href="index.html" class="encabezado__link">Inicio</a></li>
+                    <li class="encabezado__menu"><a href="sobre-mi.html" class="encabezado__link">Sobre mi</a></li>
+                    <li class="encabezado__menu"><a href="trabajos.html" class="encabezado__link">Mis trabajos</a></li>
+                    <li class="encabezado__menu"><a href="diseños.html" class="encabezado__link">Diseños</a></li>
+                    <li class="encabezado__menu"><a href="contacto.html" class="encabezado__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="fondoNegro contenido">
+        <div class="animate__animated animate__backInDown ">
+            <div class="info-contacto">
+                <a href="https://www.instagram.com/_almatatuajes/" class="info-contacto_link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <p class="info-contacto_texto">Instagram</p>
+            </div>
+            <div class="info-contacto">
+                <a href="https://www.google.com/maps/place/Per%C3%BA/@-34.6090816,-58.3783092,16.25z/data=!4m8!1m2!2m1!1sMicrocentro!3m4!1s0x95bccad3a7f9f11f:0x8bb25daa66c704be!8m2!3d-34.6085638!4d-58.3744664"
+                class="info-contacto_link">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <p class="info-contacto_texto">Microcentro - CABA</p>
+            </div>
+            <div class="info-contacto">
+                <a href="https://outlook.live.com/" class="info-contacto_link"><i class="far fa-envelope"></i></a>
+                <p class="info-contacto_texto">Email</p>
+            </div>
+        </div>
+        <form>
+            <!--inicio formulario-->
+            <h1 class="contenido__titulo">Comunicate conmigo</h1>
+            <label for="name">Tu nombre</label>
+            <input type="text" name="name">
+            <label for="email">Tu email</label>
+            <input type="email" name="email">
+            <label for="texto">Motivo de tu consulta</label>
+            <input type="text-area" name="texto">
+            <input type="submit" value="Enviar" id="botonInput">
+        </form>
+        <!--fin formulario-->
+    </main>
+
+    <footer class=" col-12 fondoNegro">
+        <div class="container footer">
+            <div class="footer__info-footer">
+                <!--redes del footer-->
+                <a href="https://www.instagram.com/_almatatuajes/" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fab fa-instagram"></i></a>
+                <a href="https://outlook.live.com/" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <div class="footer__info-footer">
+                <!--ubicacion-->
+                <p>Ciudad Autónoma de Buenos Aires - Argentina</p>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Atención</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Vas a ser redirigidx a otra página.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="https://www.instagram.com/_almatatuajes/" type="button" class="btn btn-primary">Entiendo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+    </script>
+
+</body>
+
+</html>
