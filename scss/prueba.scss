@@ -1,6 +1,7 @@
+/*variables para tener fácil acceso a colores*/
 $rosita: rgb(242, 209, 255);
 $gris: rgb(175, 174, 174);
-
+/*mixin para tener una estructura predeterminada para los botones*/
 @mixin boton($fondo, $color, $fontsize, $borde, $transicion) {
     background-color: $fondo;
     color: $color;
@@ -8,13 +9,13 @@ $gris: rgb(175, 174, 174);
     border: $borde;
     transition: $transicion;
 }
-
+/*reseteo*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*etiquetas*/
 body{
     background-image: url(../img/fondoalma.jpg);
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ input{
     background-position: center;
     margin: 5px 0;
 }
-
+/*modal*/
 .modal-title{
     font-family: Bebas Neue, sans-serif;
     font-size: 30px;
@@ -81,23 +82,13 @@ input{
     background-color: black;
     color: $rosita;
 }
-
-.contenedorGaleria{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin: auto;
-}
-
+/*contenedor del carousel*/
 .contenedorDiseños{
     width: 600px;
     margin: auto;
 }
 
-
+/*badge del carousel*/
 .badge{
     background-color: rgb(242, 209, 255);
     background: radial-gradient(circle, rgba(242,209,255,1) 63%, rgba(242,209,255,0) 100%);
@@ -108,7 +99,7 @@ input{
 }
 
 #botonInput{
-    @include boton(transparent, white, 30px, 2px solid white, all .5s ease);
+    @include boton(transparent, white, 30px, 2px solid white, all .5s ease);/*incluye el mixin*/
     font-family: Bebas Neue, sans-serif;
     width: 25%;
     margin-top: 40px;
@@ -117,11 +108,11 @@ input{
 }
 
 #botonInput:hover{
-    @extend #botonInput;
+    @extend #botonInput;/*extiende las caracteristicas usadar en el id anterior*/
     background-color: white;
     color: black;
 }
-
+/*nav*/
 .encabezado{
     display: flex;
     justify-content: space-between;
@@ -154,7 +145,7 @@ input{
         padding: 15px;
     }
 }
-
+/*contenido del index*/
 .contenido{
     width: auto;
     height: auto;
@@ -181,7 +172,7 @@ input{
     align-items: center;
     padding: 90px 0;
     .contenedor-boton__boton{
-        @include boton(transparent, white, 30px, 2px solid white, all .5s ease);
+        @include boton(transparent, white, 30px, 2px solid white, all .5s ease);/*incluye el mixin*/
         font-family: Bebas Neue, sans-serif;
         text-decoration: none;
         padding: 0 50px;
@@ -192,7 +183,7 @@ input{
         color: black;
     }
 }
-
+/*contenido "sobre-mi"*/
 .contenedor-info{
     width: 100%;
     display: flex;
@@ -209,36 +200,44 @@ input{
         color: $rosita;
     }
 }
-
-
-.imagen-galeria{
-    position: relative;
-    .imagen-galeria__img{
-        width: 32vw;
-        height: 100%;
-        transition: all .4s ease-in;
-    }
-    .imagen-galeria__img:hover{
-        transform: scale(1.3);
+/*contenido "trabajos"*/
+.contenedorGaleria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: auto;
+    .imagen-galeria{
         position: relative;
-        overflow: hidden;
-        z-index: 1;
+        .imagen-galeria__img{
+            width: 32vw;
+            height: 100%;
+            transition: all .4s ease-in;
+        }
+        .imagen-galeria__img:hover{
+            transform: scale(1.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+            
     }
-        
-}
-
-.texto-galeria{
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    .texto-galeria__p{
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    color: $rosita;
-}
+    
+    .texto-galeria{
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        .texto-galeria__p{
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        color: $rosita;
+    }
+    }
 }
     
-
+/*contenido "contacto"*/
 .info-contacto{
     width: 33%;
     display: inline-block;
@@ -255,7 +254,7 @@ input{
     }
     
 }
-
+/*footer*/
 .footer{
     width: 100%;
     display: flex;
@@ -281,7 +280,7 @@ input{
         }
     }
 }
-
+/*MEDIA QUERIES CELULARES*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .contenedor-info{
         width: 100%;
@@ -314,7 +313,7 @@ input{
         width: 100%;
     }
 }
-
+/*MEDIA QUERIES TABLETS*/
 @media screen and (min-width: 600px) and (max-width: 800px) {
 
     .contenido{
