@@ -35,6 +35,32 @@ input {
   background-position: center;
   margin: 5px 0; }
 
+.modal-title {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 30px; }
+
+.modal-body {
+  font-family: Roboto, sans-serif;
+  font-size: 20px; }
+
+.btn-secondary {
+  background-color: #afaeae;
+  color: white;
+  border: none; }
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #afaeae; }
+
+.btn-primary {
+  background-color: #f2d1ff;
+  color: black;
+  border: none; }
+
+.btn-primary:hover {
+  background-color: black;
+  color: #f2d1ff; }
+
 .contenedorGaleria {
   width: 100%;
   display: grid;

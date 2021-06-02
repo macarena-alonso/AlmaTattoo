@@ -50,6 +50,38 @@ input{
     margin: 5px 0;
 }
 
+.modal-title{
+    font-family: Bebas Neue, sans-serif;
+    font-size: 30px;
+}
+
+.modal-body{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+
+.btn-secondary{
+    background-color: $gris;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: $gris;
+}
+
+.btn-primary{
+    background-color: $rosita;
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: black;
+    color: $rosita;
+}
+
 .contenedorGaleria{
     width: 100%;
     display: grid;
